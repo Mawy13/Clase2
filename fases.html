@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Hello, world!</h1>
+  div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Inicio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="4p.html">4P</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fases.html">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <table class="table">
+        <thead>
+          <tr>
+
+            <th scope="col">Fase</th>
+            <th scope="col">actividades</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Iniciacion</td>
+            <td>
+              <ul>
+                <li> Nace la idea del producto de software</li>
+                <li> Se identifican los clientes y segmentos del mercado </li>
+                <li> Entrevistar al cliente para identificar los requerimientos </li>
+                <li> Se hace un analisis para determinar programas similares </li>
+                <li> Se analliza la factibilidad del producto y la posible aceptacion hacia los usuarios </li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>planeacion</td>
+            <td>
+              <ul>
+                <li> Se desarrolla un plan para determinar los ecursos a utilizar dentro del proyecto de software</li>
+                <li> Se determina el costo aproximado del proyecto y tiempo de desarrollo </li>
+                <li> Dependiendo de la fecha de lanzamiento del prducto se puede ajustar el cronograma </li>
+                <li> El plan de desarrollo se actualiza dependiendo de las necessidades del proyecto </li>
+                <li> Se desarrolla <strong> El plan de gestion de la configuracion del proyecto </strong> este contiene
+                  las actividades para controlar los cambios y manejar el diseño</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>analisis </td>
+            <td>
+              <ul>
+                <li> Se recopila la mayor catidad de informacion sobre los requerimientos de su cliente </li>
+                <li> Se definen las funcionalidades del producto </li>
+                <li> Los requerimientos generales se pueden recopilar por medio de entrevistas o lluvias de ideas </li>
+                <li> Los requerimientos definen que es lo que el producto de software debe hacer los cuales se dividen
+                  en <ol>
+                    <li> funcionales </li>
+                    <li> no funcionales </li>
+                  </ol>
+                </li>
+              </ul>
+            </td>
+          </tr>
+          <td>diseño </td>
+          <td>
+            <ul>
+              <li> <strong> nota: hasta esta fase aun no se programa codigo </strong></li>
+              <li> Esta fase define como el software debe ser construido para cumplir con los requerimientos definidos
+                en la fase anterior </li>
+              <li> En esta fase se define la arquitectura del software, todo esto acompañado por la respectiva
+                documentacion que es lo que conforma la <strong> Documentacion de diseño dle software </strong>,
+                incluyendo aca los sketch, mockup,wireframe y el prototype </li>
+            </ul>
+          </td>
+          </tr>
+          <td>implementacion </td>
+          <td>
+            <ul>
+              <li> En esta fase se programa el codigo del todo el software </li>
+              <li> El objetivo es tomar todo lo hecho anteriormente y aplicarlo dentro del software usando las
+                tecnologias definidas </li>
+              <li> <Strong> La idea es que al finalizar esta fase el codigo ya este listo para probarlo </Strong></li>
+            </ul>
+          </td>
+          </tr>
+          <td>pruebas </td>
+          <td>
+            <ul>
+              <li> El software se prueba para deteminar si cumple con los requerimientos </li>
+              <li> Se prueban tres fases principales
+                <ol>
+                  <li> Cada modulo se prueba de forma independiente </li>
+                  <li> Los modulos se van integrando de a pocos para identificar si la comunicacion entre ellos es
+                    corecta </li>
+                  <li> Una vez terminado este paso se prueba el sistema completo y se determian si cumple los
+                    requerimientos </li>
+                  <li> Por ultimo se le entrega al cliente como <strong> beta tester </strong></li>
+                </ol>
+              </li>
+            </ul>
+          </td>
+          </tr>
+          <td>mantenimiento </td>
+          <td>
+            <ul>
+              <li> Esta fase comienza cuando el software se libera oficialmente para los clientes </li>
+              <li> en esta fase:
+                <ul>
+                  <li>se reparan los fallos presentados pro el cliente </li>
+                  <li> se implementan los requerimientos adicionales </li>
+                  <li> se mejoran los atributos de sw </li>
+                </ul>
+              </li>
+            </ul>
+          </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
